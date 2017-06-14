@@ -1,17 +1,19 @@
 {
-  "name": "ember-models-table",
-  "version": "1.12.0",
-  "description": "Table with pagination, sorting and filtering",
+  "name": "ember-material-table",
+  "version": "0.1.1",
+  "description": "Ember Material table with pagination, sorting and filtering",
   "keywords": [
-    "ember-addon"
+    "ember-addon",
+    "material",
+    "table"
   ],
   "license": "MIT",
-  "author": "Oleg Nechiporenko",
+  "author": "Howard Ju",
   "directories": {
     "doc": "doc",
     "test": "tests"
   },
-  "repository": "https://github.com/onechiporenko/ember-models-table",
+  "repository": "https://github.com/eNkru/ember-material-table",
   "scripts": {
     "build": "ember build",
     "start": "ember server",
@@ -48,7 +50,7 @@
     "node": ">= 4"
   },
   "ember-addon": {
-    "demoURL": "http://onechiporenko.github.io/ember-models-table/",
+    "demoURL": "",
     "configPath": "tests/dummy/config"
   }
 }
