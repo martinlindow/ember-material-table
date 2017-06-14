@@ -1,22 +1,21 @@
-# Ember-models-table
+# Ember-material-table
 
-[![Build Status](https://travis-ci.org/onechiporenko/ember-models-table.svg?branch=master)](https://travis-ci.org/onechiporenko/ember-models-table)
-[![Codacy Badge](https://www.codacy.com/project/badge/062ef689838e43dfa46eecd1f74f22af)](https://www.codacy.com/app/cv_github/ember-models-table)
-[![Ember Observer Score](https://emberobserver.com/badges/ember-models-table.svg)](https://emberobserver.com/addons/ember-models-table)
-[![npm version](https://badge.fury.io/js/ember-models-table.png)](http://badge.fury.io/js/ember-models-table)
-[![License](http://img.shields.io/:license-mit-blue.svg)](http://doge.mit-license.org)
-[![Downloads](http://img.shields.io/npm/dm/ember-models-table.svg)](https://www.npmjs.com/package/ember-models-table)
+This is an Ember Addon for table with pagination and sorting.
+
+The Addon is based on the [ember-models-table](https://github.com/onechiporenko/ember-models-table) and enable the [Google Material Design](https://material.io/guidelines/components/data-tables.html) with [material-kit](https://github.com/creativetimofficial/material-kit)
 
 ## Install
 
 ```bash
-ember install ember-models-table
+ember install ember-material-table
 ```
 
 ## Usage
-
-See [Demo](http://onechiporenko.github.io/ember-models-table/)
+```bash
+npm i && ember s
+```
+Browsing to http://localhost:4200 to see the usage in DEMO app.
 
 ## Requirements
 
-* Twitter Bootstrap should be installed
+* Twitter Bootstrap 3
