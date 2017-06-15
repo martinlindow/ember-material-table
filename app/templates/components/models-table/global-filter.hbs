@@ -1,7 +1,6 @@
 <div class="{{classes.globalFilterWrapper}}">
   <div class="form-group label-floating">
-    <label class="control-label">{{messages.searchLabel}}</label>
-    {{input type="text" value=filterString class=classes.input}}
+    {{input type="text" placeholder=messages.searchLabel value=filterString class=classes.input}}
     {{#if globalFilterUsed}}
       <span onclick={{action (mut filterString) ""}} class="clearFilterIcon {{classes.clearFilterIcon}}"></span>
     {{/if}}

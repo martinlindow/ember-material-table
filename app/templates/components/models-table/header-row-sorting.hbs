@@ -9,8 +9,8 @@
             {{#if column.componentForSortCell}}
               {{component column.componentForSortCell data=data column=column row=record table=this}}
             {{else}}
-              {{column.title}}
               {{partial headerSortingIconsTemplate}}
+              {{column.title}}
             {{/if}}
           {{/if}}
         </th>
