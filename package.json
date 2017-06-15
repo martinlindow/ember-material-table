@@ -1,6 +1,6 @@
 {
   "name": "ember-material-table",
-  "version": "0.1.1",
+  "version": "2.13.1",
   "description": "Ember Material table with pagination, sorting and filtering",
   "keywords": [
     "ember-addon",
