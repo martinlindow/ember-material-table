@@ -1,30 +1,30 @@
 <div class="{{classes.columnsDropdownWrapper}}">
   <div class="{{classes.columnsDropdownButtonWrapper}}">
-    <button href="#" class="{{classes.buttonDefault}} dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <a href="#" class="text-muted dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
       <i class="material-icons">filter_list</i>
-    </button>
+    </a>
 
     <ul class="{{classes.columnsDropdown}}">
 
       {{#if columnDropdownOptions.showAll}}
         <li>
-          <a {{action "showAllColumns" column bubbles=false}} href="#">{{messages.columns-showAll}}</a>
+          <a {{action "showAllColumns" column bubbles=false}}>{{messages.columns-showAll}}</a>
         </li>
       {{/if}}
       {{#if columnDropdownOptions.hideAll}}
         <li>
-          <a {{action "hideAllColumns" column bubbles=false}} href="#">{{messages.columns-hideAll}}</a>
+          <a {{action "hideAllColumns" column bubbles=false}}>{{messages.columns-hideAll}}</a>
         </li>
       {{/if}}
       {{#if columnDropdownOptions.restoreDefaults}}
         <li>
-          <a {{action "restoreDefaultVisibility" column bubbles=false}} href="#">{{messages.columns-restoreDefaults}}</a>
+          <a {{action "restoreDefaultVisibility" column bubbles=false}}>{{messages.columns-restoreDefaults}}</a>
         </li>
       {{/if}}
 
       {{#each columnDropdownOptions.columnSets as |columnSet|}}
         <li>
-          <a {{action "toggleColumnSet" columnSet bubbles=false}} href="#">{{columnSet.label}}</a>
+          <a {{action "toggleColumnSet" columnSet bubbles=false}}>{{columnSet.label}}</a>
         </li>
       {{/each}}
 
@@ -33,8 +33,8 @@
       {{#each processedColumns as |column|}}
         {{#if column.mayBeHidden}}
           <li>
-            <a {{action "toggleHidden" column bubbles=false}} href="#">
-              <span class="{{if column.isVisible icons.column-visible icons.column-hidden}}"></span> {{column.title}}
+            <a {{action "toggleHidden" column bubbles=false}}>
+              <i class="material-icons">{{if column.isVisible icons.column-visible icons.column-hidden}}</i> {{column.title}}
             </a>
           </li>
         {{/if}}
