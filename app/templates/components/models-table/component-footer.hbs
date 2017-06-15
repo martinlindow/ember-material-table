@@ -2,7 +2,7 @@
   {{! table summary start }}
   <div class="{{if useNumericPagination classes.footerSummaryNumericPagination classes.footerSummaryDefaultPagination}} {{classes.footerSummary}}">
     {{summary}}
-    <a href="#" {{action "clearFilters"}} class="btn btn-link clearFilters {{unless anyFilterUsed "invisible"}}">
+    <a href="#" {{action "clearFilters"}} class="btn btn-simple clearFilters {{unless anyFilterUsed "invisible"}}">
       <span class="{{classes.clearAllFiltersIcon}}"></span>
     </a>
   </div>
