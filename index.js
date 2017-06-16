@@ -12,7 +12,7 @@ module.exports = {
       app = app.app;
     }
 
-    app.import('vendor/ember-models-table/register-version.js');
+    app.import('vendor/ember-material-table/register-version.js');
   }
 
 };
