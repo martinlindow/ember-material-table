@@ -105,7 +105,7 @@ const defaultCssClasses = {
   thead: '',
   input: 'form-control',
   clearFilterIcon: 'glyphicon glyphicon-remove-sign form-control-feedback',
-  clearAllFiltersIcon: 'glyphicon glyphicon-remove-circle',
+  clearAllFiltersIcon: 'cancel',
   globalFilterDropdownWrapper: ''
 };
 
