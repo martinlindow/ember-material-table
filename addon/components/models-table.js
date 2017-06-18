@@ -79,7 +79,7 @@ const defaultIcons = {
 const defaultCssClasses = {
   outerTableWrapper: '',
   innerTableWrapper: 'inner-table-wrapper',
-  table: 'table table-striped table-bordered table-condensed',
+  table: 'table table-hover',
   globalFilterWrapper: 'pull-left',
   columnsDropdownWrapper: 'pull-right columns-dropdown',
   columnsDropdownButtonWrapper: 'option-button dropdown',
