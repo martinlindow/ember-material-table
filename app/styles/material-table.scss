@@ -82,4 +82,8 @@ $table-font-color:              mix(black, white, 87%);
   .selected-row {
     background-color: $table-bg-active;
   }
+
+  .table-footer {
+    color: $table-header-font-color;
+  }
 }
