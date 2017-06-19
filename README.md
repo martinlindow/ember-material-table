@@ -16,6 +16,6 @@ npm i && ember s
 ```
 Browsing to http://localhost:4200 to see the usage in DEMO app.
 
-## Requirements
-
-* Twitter Bootstrap 3
+## Demo
+* [Github Page](https://enkru.github.io/ember-material-table/)
+* [ember-material-table.surge.sh](http://ember-material-table.surge.sh/)
