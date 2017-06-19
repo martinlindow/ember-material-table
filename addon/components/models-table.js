@@ -70,16 +70,16 @@ const defaultIcons = {
   'expand-all-rows': 'glyphicon glyphicon-plus',
   'collapse-row': 'glyphicon glyphicon-minus',
   'collapse-all-rows': 'glyphicon glyphicon-minus',
-  'select-all-rows': 'glyphicon glyphicon-check',
-  'deselect-all-rows': 'glyphicon glyphicon-unchecked',
-  'select-row': 'glyphicon glyphicon-check',
-  'deselect-row': 'glyphicon glyphicon-unchecked'
+  'select-all-rows': 'check_box',
+  'deselect-all-rows': 'check_box_outline_blank',
+  'select-row': 'check_box',
+  'deselect-row': 'check_box_outline_blank'
 };
 
 const defaultCssClasses = {
   outerTableWrapper: '',
   innerTableWrapper: 'inner-table-wrapper',
-  table: 'table table-striped table-bordered table-condensed',
+  table: 'table table-hover',
   globalFilterWrapper: 'pull-left',
   columnsDropdownWrapper: 'pull-right columns-dropdown',
   columnsDropdownButtonWrapper: 'option-button dropdown',
@@ -105,7 +105,7 @@ const defaultCssClasses = {
   thead: '',
   input: 'form-control',
   clearFilterIcon: 'glyphicon glyphicon-remove-sign form-control-feedback',
-  clearAllFiltersIcon: 'glyphicon glyphicon-remove-circle',
+  clearAllFiltersIcon: 'cancel',
   globalFilterDropdownWrapper: ''
 };
 
