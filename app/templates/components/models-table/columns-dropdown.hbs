@@ -1,44 +1,42 @@
-<div class="{{classes.columnsDropdownWrapper}}">
-  <div class="{{classes.columnsDropdownButtonWrapper}}">
-    <a href="#" class="text-muted dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-      <i class="material-icons">filter_list</i>
-    </a>
+<li class="{{classes.columnsDropdownButtonWrapper}}">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <i class="material-icons">settings</i>
+    <i class="material-icons">arrow_drop_down</i>
+  </a>
 
-    <ul class="{{classes.columnsDropdown}}">
+  <ul class="{{classes.columnsDropdown}}">
+    {{#if columnDropdownOptions.showAll}}
+      <li>
+        <a {{action "showAllColumns" column bubbles=false}}>{{messages.columns-showAll}}</a>
+      </li>
+    {{/if}}
+    {{#if columnDropdownOptions.hideAll}}
+      <li>
+        <a {{action "hideAllColumns" column bubbles=false}}>{{messages.columns-hideAll}}</a>
+      </li>
+    {{/if}}
+    {{#if columnDropdownOptions.restoreDefaults}}
+      <li>
+        <a {{action "restoreDefaultVisibility" column bubbles=false}}>{{messages.columns-restoreDefaults}}</a>
+      </li>
+    {{/if}}
 
-      {{#if columnDropdownOptions.showAll}}
+    {{#each columnDropdownOptions.columnSets as |columnSet|}}
+      <li>
+        <a {{action "toggleColumnSet" columnSet bubbles=false}}>{{columnSet.label}}</a>
+      </li>
+    {{/each}}
+
+    <li class="divider"></li>
+
+    {{#each processedColumns as |column|}}
+      {{#if column.mayBeHidden}}
         <li>
-          <a {{action "showAllColumns" column bubbles=false}}>{{messages.columns-showAll}}</a>
+          <a {{action "toggleHidden" column bubbles=false}}>
+            <i class="material-icons">{{if column.isVisible icons.column-visible icons.column-hidden}}</i> {{column.title}}
+          </a>
         </li>
       {{/if}}
-      {{#if columnDropdownOptions.hideAll}}
-        <li>
-          <a {{action "hideAllColumns" column bubbles=false}}>{{messages.columns-hideAll}}</a>
-        </li>
-      {{/if}}
-      {{#if columnDropdownOptions.restoreDefaults}}
-        <li>
-          <a {{action "restoreDefaultVisibility" column bubbles=false}}>{{messages.columns-restoreDefaults}}</a>
-        </li>
-      {{/if}}
-
-      {{#each columnDropdownOptions.columnSets as |columnSet|}}
-        <li>
-          <a {{action "toggleColumnSet" columnSet bubbles=false}}>{{columnSet.label}}</a>
-        </li>
-      {{/each}}
-
-      <li class="divider"></li>
-
-      {{#each processedColumns as |column|}}
-        {{#if column.mayBeHidden}}
-          <li>
-            <a {{action "toggleHidden" column bubbles=false}}>
-              <i class="material-icons">{{if column.isVisible icons.column-visible icons.column-hidden}}</i> {{column.title}}
-            </a>
-          </li>
-        {{/if}}
-      {{/each}}
-    </ul>
-  </div>
-</div>
+    {{/each}}
+  </ul>
+</li>

@@ -1,18 +1,19 @@
 // Variables
 // ---------------------
-$table-header-font-weight: 400;
-$table-header-font-color: mix(black, white, 54%);
+$table-header-font-weight:        400;
+$table-header-font-color:         mix(black, white, 54%);
+$table-header-footer-font-size:   12px;
 
-$table-cell-padding:            1.6rem;
-$table-condensed-cell-padding:  $table-cell-padding/2;
+$table-cell-padding:              1.6rem;
+$table-condensed-cell-padding:    $table-cell-padding/2;
 
-
-$table-bg:                      #fff;
-$table-bg-accent:               #f5f5f5;
-$table-bg-hover:                #eeeeee;
-$table-bg-active:               $table-bg-accent;
-$table-border-color:            #e0e0e0;
-$table-font-color:              mix(black, white, 87%);
+$table-bg:                        #fff;
+$table-bg-accent:                 #f5f5f5;
+$table-bg-hover:                  #eeeeee;
+$table-bg-active:                 $table-bg-accent;
+$table-border-color:              #e0e0e0;
+$table-font-size:                 13px;
+$table-font-color:                mix(black, white, 87%);
 
 // Mixins
 // -----------------
@@ -43,13 +44,8 @@ $table-font-color:              mix(black, white, 87%);
   }
   > thead > tr > th {
     font-weight: $table-header-font-weight;
-    //color: $table-header-font-color;
     padding: 1rem;
     vertical-align: bottom;
-  }
-
-  [class*="header"]{
-    color: $table-header-font-color;
   }
 }
 
@@ -61,29 +57,35 @@ $table-font-color:              mix(black, white, 87%);
 
 .models-table-wrapper {
 
-  table .material-icons {
-    vertical-align: middle;
-    font-size: 16px;
+  font-size: $table-font-size;
+
+  .table-header {
+    color: $table-header-font-color;
+    font-size: $table-header-footer-font-size;
+
+    .material-icons {
+      font-size: 9px;
+    }
+  }
+
+  .table-footer {
+    font-size: $table-header-footer-font-size;
+    color: $table-header-font-color;
+
+    .pagination {
+      margin: 0;
+    }
+
+    .material-icons {
+      font-size: 16px;
+    }
   }
 
   .form-group {
     margin: auto;
   }
 
-  .option-button {
-    padding: 7px;
-  }
-
-  .table-footer {
-    align-items: center;
-    display: flex;
-  }
-
   .selected-row {
     background-color: $table-bg-active;
-  }
-
-  .table-footer {
-    color: $table-header-font-color;
   }
 }
