@@ -85,7 +85,7 @@ const defaultCssClasses = {
   theadCell: 'table-header',
   theadCellNoSorting: 'table-header-no-sorting',
   theadCellNoFiltering: 'table-header-no-filtering',
-  tfooterWrapper: 'table-footer clearfix',
+  tfooterWrapper: 'md-table-footer clearfix',
   footerSummary: 'table-summary',
   footerSummaryNumericPagination: 'col-md-4 col-sm-4 col-xs-4',
   footerSummaryDefaultPagination: 'col-md-5 col-sm-5 col-xs-5',

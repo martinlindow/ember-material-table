@@ -59,6 +59,10 @@ $table-font-color:                mix(black, white, 87%);
 
   font-size: $table-font-size;
 
+  .md-table-header {
+    color: $table-header-font-color;
+  }
+
   .table-header {
     color: $table-header-font-color;
     font-size: $table-header-footer-font-size;
@@ -68,7 +72,7 @@ $table-font-color:                mix(black, white, 87%);
     }
   }
 
-  .table-footer {
+  .md-table-footer {
     font-size: $table-header-footer-font-size;
     color: $table-header-font-color;
 
