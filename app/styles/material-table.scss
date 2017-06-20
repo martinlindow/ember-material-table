@@ -43,13 +43,8 @@ $table-font-color:              mix(black, white, 87%);
   }
   > thead > tr > th {
     font-weight: $table-header-font-weight;
-    //color: $table-header-font-color;
     padding: 1rem;
     vertical-align: bottom;
-  }
-
-  [class*="header"]{
-    color: $table-header-font-color;
   }
 }
 
@@ -61,10 +56,21 @@ $table-font-color:              mix(black, white, 87%);
 
 .models-table-wrapper {
 
-  .material-icons {
-    vertical-align: middle;
-    font-size: 16px;
+  .table-header {
     color: $table-header-font-color;
+  }
+
+  .table-footer {
+    font-size: 12px;
+    color: $table-header-font-color;
+
+    .pagination {
+      margin: 0;
+    }
+
+    .material-icons {
+      font-size: 16px;
+    }
   }
 
   .form-group {
@@ -75,16 +81,7 @@ $table-font-color:              mix(black, white, 87%);
     padding: 7px;
   }
 
-  .table-footer {
-    align-items: center;
-    display: flex;
-  }
-
   .selected-row {
     background-color: $table-bg-active;
-  }
-
-  .table-footer {
-    color: $table-header-font-color;
   }
 }
