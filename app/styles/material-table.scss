@@ -61,9 +61,10 @@ $table-font-color:              mix(black, white, 87%);
 
 .models-table-wrapper {
 
-  table .material-icons {
+  .material-icons {
     vertical-align: middle;
     font-size: 16px;
+    color: $table-header-font-color;
   }
 
   .form-group {
