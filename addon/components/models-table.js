@@ -85,15 +85,15 @@ const defaultCssClasses = {
   theadCell: 'table-header',
   theadCellNoSorting: 'table-header-no-sorting',
   theadCellNoFiltering: 'table-header-no-filtering',
-  tfooterWrapper: 'table-footer clearfix',
+  tfooterWrapper: 'md-table-footer clearfix',
   footerSummary: 'table-summary',
   footerSummaryNumericPagination: 'col-md-4 col-sm-4 col-xs-4',
   footerSummaryDefaultPagination: 'col-md-5 col-sm-5 col-xs-5',
   pageSizeWrapper: 'col-md-2 col-sm-2 col-xs-2',
   pageSizeSelectWrapper: 'pull-right',
-  paginationWrapper: 'table-nav',
-  paginationWrapperNumeric: 'col-md-6 col-sm-6 col-xs-6',
-  paginationWrapperDefault: 'col-md-5 col-sm-5 col-xs-5',
+  paginationWrapper: '',
+  paginationWrapperNumeric: '',
+  paginationWrapperDefault: '',
   buttonDefault: 'btn btn-simple',
   noDataCell: '',
   collapseRow: 'collapse-row',
@@ -228,6 +228,15 @@ export default Component.extend({
    * @default false
    */
   useNumericPagination: false,
+
+  /**
+   * Determines if the top pagination should be shown
+   *
+   * @type {boolean}
+   * @name ModelsTable#showTopPagination
+   * @default false
+   */
+  showTopPagination: false,
 
   /**
    * Determines if columns-dropdown should be shown
