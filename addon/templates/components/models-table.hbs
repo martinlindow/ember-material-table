@@ -26,6 +26,21 @@
       </div>
     </div>
   </nav>
+  {{#if showTopPagination}}
+    <div class="md-table-subheader">
+      <hr/>
+      {{#if useNumericPagination}}
+        <div class="{{classes.paginationWrapper}} {{classes.paginationWrapperNumeric}}">
+          {{partial numericPaginationTemplate}}
+        </div>
+      {{else}}
+        <div class="{{classes.paginationWrapper}} {{classes.paginationWrapperDefault}}">
+          {{partial simplePaginationTemplate}}
+        </div>
+      {{/if}}
+    </div>
+  {{/if}}
+
 
   <!-- Div needed by Firefox to reset floating positioning -->
   <div class='models-table-clear'></div>

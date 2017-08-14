@@ -63,6 +63,15 @@ $table-font-color:                mix(black, white, 87%);
     color: $table-header-font-color;
   }
 
+  .md-table-subheader {
+    & > hr {
+      height: 1px;
+      border: none;
+      color: #dddddd;
+      background-color: #dddddd;
+    }
+  }
+
   .table-header {
     color: $table-header-font-color;
     font-size: $table-header-footer-font-size;
