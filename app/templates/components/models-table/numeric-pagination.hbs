@@ -1,7 +1,7 @@
 <div class="btn-toolbar pull-right tablecontrol" role="toolbar">
   {{#if showSummary}}
     <span class="item summary">
-      {{summary}}
+      {{summary}} items
       <a href="#" {{action "clearFilters"}} class="btn btn-simple btn-fab btn-fab-mini clearFilters {{unless anyFilterUsed "invisible"}}">
         <i class="material-icons">{{classes.clearAllFiltersIcon}}</i>
       </a>
@@ -11,7 +11,7 @@
     {{models-select
       options=pageSizeOptions
       value=pageSize
-      class="item pagesize"
+      class="item form-control pagesize"
     }}
   {{/if}}
   <ul class="item pagination pagination-primary">
