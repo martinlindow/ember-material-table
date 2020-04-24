@@ -3,7 +3,7 @@
     <h4>{{title}}</h4>
   </div>
   <div class="col-md-8">
-    {{models-table data=model columns=columns useNumericPagination=true currentPageNumber=8}}
+    {{models-table data=model columns=columns useNumericPagination=true currentPageNumber=8 showSummary=true showPageSize=true showTopPagination=true showComponentFooter=false}}
   </div>
   <div class="col-md-4">
     <p>Component usage:</p>
@@ -11,6 +11,8 @@
         data=model
         columns=columns
         useNumericPagination=true
-        currentPageNumber=8&rbrace;&rbrace;</code></pre>
+        currentPageNumber=8
+        showTopPagination=true
+        showComponentFooter=false&rbrace;&rbrace;</code></pre>
   </div>
 </div>

@@ -1,5 +1,20 @@
-<div class="btn-toolbar pull-right" role="toolbar">
-  <ul class="pagination pagination-primary">
+<div class="btn-toolbar pull-right tablecontrol" role="toolbar">
+  {{#if showSummary}}
+    <span class="item summary">
+      {{summary}}
+      <a href="#" {{action "clearFilters"}} class="btn btn-simple btn-fab btn-fab-mini clearFilters {{unless anyFilterUsed "invisible"}}">
+        <i class="material-icons">{{classes.clearAllFiltersIcon}}</i>
+      </a>
+    </span>
+  {{/if}}
+  {{#if showPageSize}}
+    {{models-select
+      options=pageSizeOptions
+      value=pageSize
+      class="item pagesize"
+    }}
+  {{/if}}
+  <ul class="item pagination pagination-primary">
     {{#each visiblePageNumbers as |page|}}
       {{#if page.isLink}}
         <li class="{{if page.isActive "active"}}"><a href="#" {{action "gotoCustomPage" page.label}}>{{page.label}}</a></li>

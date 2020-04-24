@@ -1,2 +1,15 @@
 @import "material-kit";
 @import "material-table";
+
+
+.tablecontrol {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tablecontrol .item {
+    display: inline-flex;
+    align-items: center;
+    margin-right: 8px;
+}
